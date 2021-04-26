@@ -27,6 +27,11 @@ end
 group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'
+  gem 'graphiql-rails'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "graphql", "~> 1.9"
+
+gem 'graphiql-rails', group: :development

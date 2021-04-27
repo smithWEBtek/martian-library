@@ -21,8 +21,8 @@ export default () => (
         {loading
           ? 'loading...'
           : data.items.map(({ title, id, user }) => (
-              <div key={id}>
-                <b>{title}</b> {user ? `added by ${user.email}` : null}
+            <div key={id}>
+                <b>{title}</b> <i>{user ? `added by ${user.email}` : null}</i>
               </div>
             ))}
       </div>

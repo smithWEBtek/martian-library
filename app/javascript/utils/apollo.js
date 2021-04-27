@@ -24,6 +24,7 @@ const setTokenForOperation = async operation =>
       'X-CSRF-Token': token,
     },
   });
+
 // link with token
 const createLinkWithToken = () =>
   new ApolloLink(

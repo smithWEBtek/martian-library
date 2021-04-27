@@ -1,0 +1,9 @@
+.form {
+  position: relative;
+}
+
+.errors {
+  position: absolute;
+  top: -20px;
+  color: #ff5845;
+}

@@ -16,6 +16,8 @@ module Types
           null: false,
           description: "Returns list of users."
 
+    field :me, Types::UserType, null: true
+
     def items
       # Item.all
       
@@ -27,6 +29,10 @@ module Types
 
     def users
       User.all
+    end
+
+    def me
+      context[:current_user]
     end
   end
 end

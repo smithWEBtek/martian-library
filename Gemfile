@@ -22,7 +22,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem "graphql", "~> 1.9"
 
 group :development, :test do
+  gem "rspec-rails", "= 4.0.0.beta2"
   gem 'pry'
+  gem "factory_bot_rails", "~> 5.0"
 end
 
 group :development do
